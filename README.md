@@ -1,1 +1,3 @@
 # Avaware-JSP
+>这是JSP+数据库实现的web应用程序，虽然JSP已经随着MVVM模式成为主流而逐渐没落……
+但也是花了心思做的课程项目。So use it well!
