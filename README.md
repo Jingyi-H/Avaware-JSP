@@ -25,3 +25,4 @@
 + 身份证识别不灵敏，部分照片无法识别，识别到的照片有时信息读取不完整
 + 支付操作没有用支付宝沙箱（Error：AlipayClient cannot be resolved to a type. 但该有的包都在了）
 + 购物车是伴随loginBean这个session存在的，即退出登录后购物车会自动清空
++ 欢迎小伙伴来优化以上的问题~
