@@ -1,0 +1,49 @@
+<%@ page contentType = "text/html; charset=UTF-8"  %>
+<%@ page import = "com.bean.data.Login" %>
+<%@ page import = "javax.servlet.http.*" %>
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="border-color:#e9ecef;box-shadow:2px 2px 5px #6d6f72">
+    <ul class="nav navbar-nav" style="margin-left:14rem" >
+        <li><a href="index.jsp">首页</a></li>
+        <li><a href="lookProduct.jsp">产品</a></li>
+        <li><a href="bbs.jsp">论坛</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right" style="margin-right:16rem">
+        <li><a href="myCart.jsp" title="购物车"><i class="fa fa-shopping-cart" style="font-size:16pt;color:white">
+
+                <%
+                    try {
+                        Login log = (Login) session.getAttribute("loginBean");
+                        if(log != null){
+                        boolean b = log.getLogname()==null||log.getLogname().length()==0;
+                        if(!b){
+                            int size = log.getCart().size();
+                            if(size>0){
+                                out.print("<strong class='badge badge-pill badge-default' style='background:white;color:#1c49a8;position:relative;top:-12px;left:-8px'>");
+                                out.print(size);
+                                out.print("</strong>");
+                            }
+                        }
+                    }                    }
+                    catch (Exception exp){ }
+                %>
+
+        </i></a></li>
+        <li class="dropdown">
+            <a href="#" data-toggle="dropdown" title="我的账户"><i class="fa fa-user-circle-o" style="font-size:16pt;color:white"></i></a>
+            <ul class="dropdown-menu">
+        	    <li>
+        		     <a href="myAccount.jsp">我的订单</a>
+        	    </li>
+        	    <li>
+        		    <a href="myRepository.jsp">我的仓库</a>
+        	    </li>
+        	    <li class="divider">
+        	    </li>
+        	    <li>
+        	    <a href="exitServlet">退出登录</a>
+                </li>
+            </ul>
+        </li>
+        <!--<li><a href="exitServlet.jsp">退出登录</a></li>-->
+    </ul>
+</div>

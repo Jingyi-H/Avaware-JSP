@@ -1,0 +1,86 @@
+.form-horizontal {
+    margin-top:5%;
+}
+
+.lgpanel {
+    background:#ffffff;
+    margin-top:16rem;
+    margin-left:8%;
+    width:37%;
+    padding:35px 25px;
+    border-radius:32px;
+    border-width:2px;
+}
+.btn-tran {
+    background: transparent;
+    border: none !important;
+    font-size:0;
+}
+
+.navbar-collapse{
+    background:#1c49a8;
+}
+.nav{
+    /*margin-top:30px;*/
+    height:75px;
+    padding:0 30px;
+
+}
+
+.nav>li>a{
+    display:inline-block;
+    height:75px;
+    line-height:75px;
+    padding:8px 32px;
+    color:#ffffff;
+    font-size:12pt;
+    position:relative;
+}
+.nav>li>a:hover{
+    background:#3059af;
+}
+
+.nav>li>a:active{
+    background:#1c49a8;
+}
+
+.navbar-right>li>a{
+    padding:8px 24px;
+}
+.dropdown>a:active{
+    background-color:#1c49a8;
+}
+
+.btn{
+    background:#1c49a8;
+    color:white;
+}
+.btn-default:hover{
+    background:#3059af;
+    color:white;
+}
+.page{
+
+}
+        .list li{
+            background:transparent;
+            height:40px;
+            line-height:24px;
+            border-radius:20px;
+        }
+
+        .list li button{
+            height:40px;
+            line-height:24px;
+            border-radius:20px;
+            color:#828488;
+            font-size:12pt;
+        }
+        .list li button:hover:not(.active){
+            background:#3059af;
+            color:#ffffff;
+        }
+        .list li:.active{
+            background:#1c49a8;
+            color:#ffffff;
+        }
